@@ -1,0 +1,324 @@
+
+body{
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+    background-color: #dac8c8;
+    color: aliceblue;
+}
+
+h1{
+    margin: 0;
+    font-size: 70px;
+}
+
+/*HEADER SECTION*/
+
+.header{
+    height: 100vh;
+    box-sizing: border-box;
+    background-image: url(https://i.pinimg.com/originals/11/c5/1f/11c51fa94f925f8b68afff2b50e7f251.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    z-index: -10;
+    background-position: center;
+}
+
+.header__text p{
+    font-size: 70px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.header__item__container p{
+    font-size: 20px;
+    text-wrap: pretty;
+}
+
+.header__overlay{
+    height: 100vh;
+    width: 100%;
+    background-color: #0009;
+    position:absolute ;
+    z-index: 1;
+}
+
+.header__img{
+    min-width: 100px;
+    max-width: 20%;
+    border-radius: 100%;
+    border: 6px solid #000a;
+    margin: 20px;
+}
+
+.header__item__container{
+    position: relative;
+    z-index: 10;
+    margin: auto;
+    text-align: center;
+}
+
+.header__fondo{
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*NAV BAR SECTION*/
+
+.nav{
+    background-color: rgb(226, 218, 218);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 100px 0px 40px;
+    border-bottom: 2px solid #fff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+}
+
+.nav__item{
+    list-style: none;
+
+
+}
+
+
+.nav__ul{
+    margin: 0;
+    display: flex;
+}
+.nav__ul li :last-child{
+    font-size: 20px;
+}
+
+.nav__link{
+    color: #000d;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    border: 0px;
+    transition: background-color 0.2s, border-radius 0.3s, outline 0.3s, outline-offset 0.3s, color 0.5s;
+    margin: 4px 30px;
+    outline: 0;
+    outline-offset: 0;
+}
+
+.nav__item__name{
+    color: #000d;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    border: 0px;
+    margin: 4px 30px;
+    font-size: 20px;
+    border: 1px solid #000e;
+}
+
+
+.nav__link:hover{
+    background-color: rgba(13, 13, 14, 0.747);
+    border-radius: 20px;
+    outline: 2px solid rgba(13, 13, 14, 0.747);
+    outline-offset: -8px;
+    color: #ededed;
+}
+
+.nav__link__reserva{
+    background-color: #000d;
+    color:#ededed ;
+    border-radius: 20px;
+}
+.nav__link__reserva:hover{
+    background-color: #585353;
+    outline: navajowhite;
+}
+
+.nav__logo{
+    width: 60px;
+}
+
+/*main*/
+
+main{
+    background-color:#dac8c8 ;
+    color: #000e;
+}
+
+
+.tratamientos{
+
+    background-color: #dac8c8;
+    width: 100%;
+}
+.tratamientos h1{
+    text-align: center;
+    text-shadow: 10px 10px 20px #000;
+    margin-top: 10px;
+    box-sizing: border-box;
+    word-spacing: 30px;
+
+}
+.tratamientos h2{
+    text-align: center;
+    text-shadow: 10px 10px 20px #000;
+    margin-top: 5px;
+    box-sizing: border-box;
+    word-spacing: 10px;
+}
+p{
+    font-size: 30px;
+    word-spacing: 10px;
+
+}
+
+.box{
+    width: 100%;
+    height: 500px;
+    margin: 20px;
+    background-color: blueviolet;
+    background-image: url(https://i.pinimg.com/564x/c7/98/2a/c7982ad59d253e254039470401f0aa47.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+background-attachment: fixed;
+
+}
+.opaco{
+    height: 100%;
+    width: 100%;
+    background-color: #000a;
+
+}
+.box__2{
+    background-image: url(https://i.pinimg.com/564x/a0/55/75/a0557591fd01c75e6b4ca09ea9de7f29.jpg);
+    width: 100%;
+    height: 500px;
+    margin: 20px;
+    background-color: blueviolet;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+background-attachment: fixed;
+
+}
+.box__3{
+    background-image: url(https://i.pinimg.com/564x/23/e0/7c/23e07cc1bf0be2c177717f0c4de7ce79.jpg);
+    width: 100%;
+    height: 500px;
+    margin: 20px;
+    background-color: blueviolet;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+background-attachment: fixed; 
+}
+.box__4{
+    background-image: url(https://i.pinimg.com/564x/22/2f/e6/222fe6df75b147520403a3fc2d14557a.jpg);
+    width: 100%;
+    height: 500px;
+    margin: 20px;
+    background-color: blueviolet;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+background-attachment: fixed; 
+}
+.box__5{
+    background-image: url(https://i.pinimg.com/564x/99/7a/15/997a157749c38f4b866bcb1f9745435f.jpg);
+    width: 100%;
+    height: 500px;
+    margin: 20px;
+    background-color: blueviolet;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+background-attachment: fixed; 
+}
+.box__6{
+    background-image: url(https://i.pinimg.com/564x/b6/e0/32/b6e032167106e33ba2681bb9b63ba314.jpg);
+    width: 100%;
+    height: 500px;
+    margin: 20px;
+    background-color: blueviolet;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+background-attachment: fixed; 
+}
+.box__7{
+    background-image: url(https://i.pinimg.com/564x/66/ec/8d/66ec8d0c6f5357888c1f36b9c9fd5b7f.jpg);
+    width: 100%;
+    height: 500px;
+    margin: 20px;
+    background-color: blueviolet;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+background-attachment: fixed; 
+}
+/*FOOTER*/
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    
+}
+
+.footer-left p{
+    
+    font-size: 13px;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-left, .footer-center, .footer-right {
+    flex: 1;
+}
+
+.footer-center ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-center li {
+    margin: 0 15px;
+}
+
+.footer-center a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-center a:hover {
+    text-decoration: underline;
+}
+
+.footer-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media-icon {
+    margin: 0 10px;
+}
+
+.social-media-icon img {
+    width: 24px;
+    height: 24px;
+}

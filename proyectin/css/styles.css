@@ -1,0 +1,453 @@
+
+body{
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+    background-color: #000d;
+    color: aliceblue;
+}
+
+h1{
+    margin: 0;
+    font-size: 70px;
+}
+
+/*HEADER SECTION*/
+
+.header{
+    height: 100vh;
+    box-sizing: border-box;
+    background-image: url(https://i.pinimg.com/originals/1e/76/15/1e761584d6b4093c8a87bdc6e244f72d.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+.header__text p{
+    font-size: 70px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.header__item__container p{
+    font-size: 20px;
+    text-wrap: pretty;
+}
+
+.header__overlay{
+    height: 100vh;
+    width: 100%;
+    background-color: #0009;
+    position:absolute ;
+    z-index: 1;
+}
+
+.header__img{
+    min-width: 100px;
+    max-width: 20%;
+    border-radius: 100%;
+    border: 6px solid #000a;
+    margin: 20px;
+}
+
+.header__item__container{
+    position: relative;
+    z-index: 10;
+    margin: auto;
+    text-align: center;
+}
+
+.header__fondo{
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*NAV BAR SECTION*/
+
+.nav{
+    background-color: rgb(226, 218, 218);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 100px 0px 40px;
+    border-bottom: 2px solid #fff;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+}
+
+.nav__item{
+    list-style: none;
+
+
+}
+
+
+.nav__ul{
+    margin: 0;
+    display: flex;
+}
+.nav__ul li :last-child{
+    font-size: 20px;
+}
+
+.nav__link{
+    color: #000d;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    border: 0px;
+    transition: background-color 0.2s, border-radius 0.3s, outline 0.3s, outline-offset 0.3s, color 0.5s;
+    margin: 4px 30px;
+    outline: 0;
+    outline-offset: 0;
+}
+
+.nav__item__name{
+    color: #000d;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    border: 0px;
+    margin: 4px 30px;
+    font-size: 20px;
+    border: 1px solid #000e;
+}
+
+
+.nav__link:hover{
+    background-color: rgba(13, 13, 14, 0.747);
+    border-radius: 20px;
+    outline: 2px solid rgba(13, 13, 14, 0.747);
+    outline-offset: -8px;
+    color: #ededed;
+}
+
+.nav__link__reserva{
+    background-color: #000d;
+    color:#ededed ;
+    border-radius: 20px;
+}
+.nav__link__reserva:hover{
+    background-color: #585353;
+    outline: navajowhite;
+}
+
+.nav__logo{
+    width: 60px;
+
+}
+
+
+/*MAIN*/
+
+
+main{
+    margin: 0;
+}
+
+/*IMAGENES EN FILA*/
+
+.main__img__fila{
+    margin: 0;
+    display: flex;
+}
+
+.main__img__fila img{
+  width: 35%;
+  height: 400px;
+  margin-bottom: 0;
+}
+#main__img{
+    width: 30%;
+    height: 400px;
+    margin-bottom: 0;
+}
+/*SECtION 1*/
+.section__1{
+    margin: 0;
+    background-color: #dee9e9;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000f;
+    border-bottom: 1px solid #000;
+}
+/*IZQUIERDA*/
+
+.left__section{
+    width: 50%;
+    margin: 10px;
+    color: rgb(6, 6, 94);
+    
+}
+
+.section__article__link{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    border: 0px;
+    transition:  border-radius 0.2s, outline 0.3s, outline-offset 0.3s;
+    margin: 4px 30px;
+    outline: 0;
+    outline-offset: 0;
+    border: 1px solid #000d;
+    border-radius: 50px;
+}
+
+.section__article__link:hover{
+    
+    border-radius: 20px;
+    outline: 2px solid rgba(13, 13, 14, 0.747);
+    outline-offset: 8px;
+}
+
+.section__article__text{
+    font-size: 20px;
+    font-size: inherit;
+    font-size: 35px;
+
+}
+
+
+/*DERECHA*/
+.right__section{
+    width: 50%;
+    margin: 10px;
+    border: 2px solid #000f;
+    padding: 10px;
+
+}
+.right__aside__text{
+    font-size: 20px;
+    font-size: inherit;
+    font-size: 30px;
+
+}
+
+/*SECTION 2*/
+
+.section__2{
+    margin: 0;
+    background-color: #dee9e9;
+    height: 110vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    color: rgb(20, 7, 104);
+    border-bottom: 1px solid #000;
+}
+/*IZQUIERDA*/
+
+.left__section__2{
+    width: 50%;
+    
+}
+
+.article__section__2{
+    font-size: 60px;
+    margin-bottom: inherit;
+    text-shadow: 10px 10px 22px rgb(20, 7, 104) ;
+    
+   
+}
+
+
+p{
+    font-size: inherit;
+    font-size: 25px;
+
+    
+}
+
+
+/*DERECHA*/
+.right__section__2{
+    width: 50%;
+    margin: 10px;
+    display:flex;
+    flex-direction: column;
+    margin-left: 50px;
+    position: relative;
+    z-index: 1;
+    align-items: center;
+}
+
+.box__1{
+    width:80%;
+    height: 75vh;
+    background-image: url(https://img.freepik.com/fotos-premium/tratamiento-radiografia-odontologia-dientes-examen-profesional-rayos-x_116317-22666.jpg?w=360);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+}
+.box__2{
+    width:50%;
+    height: 50vh;
+    background-image: url(https://i.pinimg.com/564x/ec/ef/77/ecef772551120e9cb7489e82a31fae3b.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    margin-left: 15rem;
+    top: 20rem;
+    right: 20rem;
+
+}
+
+/*SECCION 3*/
+
+.box{
+    width: 100%;
+    height: 400px;
+    margin: 20px;
+    background-color: blueviolet;
+    background-image: url("https://i.pinimg.com/564x/79/4d/69/794d693f13923fdc0a86ea7c802cb149.jpg");
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+background-attachment: fixed;
+
+}
+.opaco{
+    height: 100%;
+    width: 100%;
+    background-color: #000a;
+
+}
+
+/*SECCION 4*/
+
+.section__4{
+    margin: 0;
+    background-color: #dee9e9;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000f;
+    border-bottom: 1px solid #000;
+}
+/*IZQUIERDA*/
+
+.left__section{
+    width: 50%;
+    margin: 10px;
+    color: #000;
+    
+}
+
+.section__article__link{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    border: 0px;
+    transition:  border-radius 0.2s, outline 0.3s, outline-offset 0.3s;
+    margin: 4px 30px;
+    outline: 0;
+    outline-offset: 0;
+    border: 1px solid #000d;
+    border-radius: 50px;
+    color: #000;
+}
+
+.section__article__link:hover{
+    
+    border-radius: 20px;
+    outline: 2px solid rgba(13, 13, 14, 0.747);
+    outline-offset: 8px;
+}
+
+.section__article__text{
+    font-size: 20px;
+    font-size: inherit;
+    font-size: 35px;
+
+
+}
+
+
+/*DERECHA*/
+.right__section{
+    width: 50%;
+    margin: 10px;
+    border: 2px solid #000f;
+
+}
+.right__aside__text{
+    font-size: 20px;
+    font-size: inherit;
+    font-size: 30px;
+
+}
+
+
+.section__article__text__4{
+
+    margin-right: 100px;
+}
+
+.right__aside__text__4{
+    margin-left: 100px;
+}
+
+
+/*FOOTER*/
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-left, .footer-center, .footer-right {
+    flex: 1;
+}
+
+.footer-center ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-center li {
+    margin: 0 15px;
+}
+
+.footer-center a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-center a:hover {
+    text-decoration: underline;
+}
+
+.footer-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media-icon {
+    margin: 0 10px;
+}
+
+.social-media-icon img {
+    width: 24px;
+    height: 24px;
+}
