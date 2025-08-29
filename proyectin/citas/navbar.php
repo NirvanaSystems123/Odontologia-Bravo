@@ -6,7 +6,7 @@
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="../html/bienvenido.php" target="blank">inicio</a>
+        <a class="nav-link" href="../html/bienvenido.php">inicio</a>
       </li> 
       <li class="nav-item">
         <a class="nav-link" href="admin/index.php">Administrativo</a>

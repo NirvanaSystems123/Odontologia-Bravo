@@ -1,419 +1,374 @@
+:root {
+    --primary-color: #0044aa;
+    --secondary-color: #f0f8ff;
+    --dark-color: #1a1a1a;
+    --light-gray: #f5f5f5;
+    --link-color: #007bff;
+    --hover-link-color: #0056b3;
+    --text-color: #333;
+}
 
-body{
+body {
     margin: 0;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
-    background-color: #000d;
-    color: aliceblue;
+    background-color: var(--light-gray);
+    color: var(--text-color);
+    line-height: 1.6;
 }
 
-h1{
-    margin: 0;
-    font-size: 70px;
+h1, h2, h3 {
+    color: var(--secondary-color);
+    font-weight: 700;
 }
 
-/*HEADER SECTION*/
+h1 {
+    font-size: clamp(2rem, 5vw, 4rem);
+}
 
-.header{
+a {
+    text-decoration: none;
+    color: var(--link-color);
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--hover-link-color);
+}
+
+/* HEADER SECTION */
+
+.header {
     height: 100vh;
-    box-sizing: border-box;
-    background-image: url(https://i.pinimg.com/originals/1e/76/15/1e761584d6b4093c8a87bdc6e244f72d.jpg) ;
+    background-image: url(https://i.pinimg.com/originals/1e/76/15/1e761584d6b4093c8a87bdc6e244f72d.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    color: white;
 }
 
-.header__text p{
-    font-size: 70px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-
-.header__item__container p{
-    font-size: 20px;
-    text-wrap: pretty;
-}
-
-.header__overlay{
-    height: 100vh;
+.header__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    background-color: #0009;
-    position:absolute ;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
     z-index: 1;
 }
 
-.header__img{
-    min-width: 100px;
-    max-width: 20%;
-    border-radius: 100%;
-    border: 6px solid #000a;
-    margin: 20px;
-}
-
-.header__item__container{
+.header__item__container {
     position: relative;
-    z-index: 10;
-    margin: auto;
-    text-align: center;
+    z-index: 2;
+    padding: 2rem;
 }
 
-.header__fondo{
-    margin: 0px;
-    width: 100%;
-    height: 100%;
+.header__img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 5px solid white;
+    object-fit: cover;
+    margin-bottom: 1rem;
 }
 
+.header__subtitle {
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    margin-top: 0.5rem;
+}
 
-/*NAV BAR SECTION*/
+/* NAV BAR SECTION */
 
-.nav{
-    background-color: rgb(226, 218, 218);
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 100px 0px 40px;
-    border-bottom: 2px solid #fff;
+.nav {
+    background-color: var(--secondary-color);
+    padding: 1rem 2rem;
+    border-bottom: 2px solid var(--primary-color);
     position: sticky;
     top: 0;
     z-index: 10;
-
 }
 
-.nav__item{
-    list-style: none;
-
-
-}
-
-
-.nav__ul{
-    margin: 0;
-    display: flex;
-}
-.nav__ul li :last-child{
-    font-size: 20px;
-}
-
-.nav__link{
-    color: #000d;
-    text-decoration: none;
-    display: inline-block;
-    padding: 10px;
-    border: 0px;
-    transition: background-color 0.2s, border-radius 0.3s, outline 0.3s, outline-offset 0.3s, color 0.5s;
-    margin: 4px 30px;
-    outline: 0;
-    outline-offset: 0;
-}
-
-.nav__item__name{
-    color: #000d;
-    text-decoration: none;
-    display: inline-block;
-    padding: 10px;
-    border: 0px;
-    margin: 4px 30px;
-    font-size: 20px;
-    border: 1px solid #000e;
-}
-
-
-.nav__link:hover{
-    background-color: rgba(13, 13, 14, 0.747);
-    border-radius: 20px;
-    outline: 2px solid rgba(13, 13, 14, 0.747);
-    outline-offset: -8px;
-    color: #ededed;
-}
-
-.nav__link__reserva{
-    background-color: #000d;
-    color:#ededed ;
-    border-radius: 20px;
-}
-.nav__link__reserva:hover{
-    background-color: #585353;
-    outline: navajowhite;
-}
-
-.nav__logo{
-    width: 60px;
-
-}
-
-
-/*MAIN*/
-
-
-main{
-    margin: 0;
-}
-
-/*IMAGENES EN FILA*/
-
-.main__img__fila{
-    margin: 0;
-    display: flex;
-}
-
-.main__img__fila img{
-  width: 35%;
-  height: 400px;
-  margin-bottom: 0;
-}
-#main__img{
-    width: 30%;
-    height: 400px;
-    margin-bottom: 0;
-}
-/*SECtION 1*/
-.section__1{
-    margin: 0;
-    background-color: #dee9e9;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #000f;
-    border-bottom: 1px solid #000;
-}
-/*IZQUIERDA*/
-
-.left__section{
-    width: 50%;
-    margin: 10px;
-    color: rgb(6, 6, 94);
-    
-}
-
-.section__article__link{
-    text-decoration: none;
-    display: inline-block;
-    padding: 10px;
-    border: 0px;
-    transition:  border-radius 0.2s, outline 0.3s, outline-offset 0.3s;
-    margin: 4px 30px;
-    outline: 0;
-    outline-offset: 0;
-    border: 1px solid #000d;
-    border-radius: 50px;
-}
-
-.section__article__link:hover{
-    
-    border-radius: 20px;
-    outline: 2px solid rgba(13, 13, 14, 0.747);
-    outline-offset: 8px;
-}
-
-.section__article__text{
-    font-size: 20px;
-    font-size: inherit;
-    font-size: 35px;
-
-}
-
-
-/*DERECHA*/
-.right__section{
-    width: 50%;
-    margin: 10px;
-    border: 2px solid #000f;
-    padding: 10px;
-
-}
-.right__aside__text{
-    font-size: 20px;
-    font-size: inherit;
-    font-size: 30px;
-
-}
-
-/*SECTION 2*/
-
-.section__2{
-    margin: 0;
-    background-color: #dee9e9;
-    height: 110vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
-    color: rgb(20, 7, 104);
-    border-bottom: 1px solid #000;
-}
-/*IZQUIERDA*/
-
-.left__section__2{
-    width: 50%;
-    
-}
-
-.article__section__2{
-    font-size: 60px;
-    margin-bottom: inherit;
-    text-shadow: 10px 10px 22px rgb(20, 7, 104) ;
-    
-   
-}
-
-
-p{
-    font-size: inherit;
-    font-size: 25px;
-
-    
-}
-
-
-/*DERECHA*/
-.right__section__2{
-    width: 50%;
-    margin: 10px;
-    display:flex;
-    flex-direction: column;
-    margin-left: 50px;
-    position: relative;
-    z-index: 1;
-    align-items: center;
-}
-
-.box__1{
-    width:80%;
-    height: 75vh;
-    background-image: url(https://img.freepik.com/fotos-premium/tratamiento-radiografia-odontologia-dientes-examen-profesional-rayos-x_116317-22666.jpg?w=360);
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-}
-.box__2{
-    width:50%;
-    height: 50vh;
-    background-image: url(https://i.pinimg.com/564x/ec/ef/77/ecef772551120e9cb7489e82a31fae3b.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-    margin-left: 15rem;
-    top: 20rem;
-    right: 20rem;
-
-}
-
-/*SECCION 3*/
-
-.box{
-    width: 100%;
-    height: 400px;
-    margin: 20px;
-    background-color: blueviolet;
-    background-image: url("https://i.pinimg.com/564x/79/4d/69/794d693f13923fdc0a86ea7c802cb149.jpg");
-    background-size: cover;
-    background-position: center;
-    margin: 0;
-background-attachment: fixed;
-
-}
-.opaco{
-    height: 100%;
-    width: 100%;
-    background-color: #000a;
-
-}
-
-/*SECCION 4*/
-
-.section__4{
-    margin: 0;
-    background-color: #dee9e9;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #000f;
-    border-bottom: 1px solid #000;
-}
-/*IZQUIERDA*/
-
-.left__section{
-    width: 50%;
-    margin: 10px;
-    color: #000;
-    
-}
-
-.section__article__link{
-    text-decoration: none;
-    display: inline-block;
-    padding: 10px;
-    border: 0px;
-    transition:  border-radius 0.2s, outline 0.3s, outline-offset 0.3s;
-    margin: 4px 30px;
-    outline: 0;
-    outline-offset: 0;
-    border: 1px solid #000d;
-    border-radius: 50px;
-    color: #000;
-}
-
-.section__article__link:hover{
-    
-    border-radius: 20px;
-    outline: 2px solid rgba(13, 13, 14, 0.747);
-    outline-offset: 8px;
-}
-
-.section__article__text{
-    font-size: 20px;
-    font-size: inherit;
-    font-size: 35px;
-
-
-}
-
-
-/*DERECHA*/
-.right__section{
-    width: 50%;
-    margin: 10px;
-    border: 2px solid #000f;
-
-}
-.right__aside__text{
-    font-size: 20px;
-    font-size: inherit;
-    font-size: 30px;
-
-}
-
-
-.section__article__text__4{
-
-    margin-right: 100px;
-}
-
-.right__aside__text__4{
-    margin-left: 100px;
-}
-
-
-/*FOOTER*/
-
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-.footer-container {
+.nav-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+}
+
+.nav__logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.nav__ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.nav__item {
+    margin: 0 0.5rem;
+}
+
+.nav__link {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: var(--dark-color);
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav__link:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.nav__link__reserva {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.75rem 1.25rem;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.nav__link__reserva:hover {
+    background-color: var(--hover-link-color);
+}
+
+.nav__item__name {
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+}
+
+/* HAMBURGER MENU */
+
+.nav__toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    position: relative;
+    z-index: 100;
+}
+
+
+
+
+
+/* MAIN CONTENT */
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.main__images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.main__images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* INFO SECTIONS */
+
+.info-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: stretch;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.info-card {
+    flex: 1;
+    min-width: 280px;
+    padding: 1.5rem;
+    border: 1px solid var(--light-gray);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.info-card h2 {
+    font-size: 1.5rem;
+}
+
+.info-link {
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 2px solid var(--primary-color);
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.info-link:hover {
+    background-color: var(--primary-color);
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.info-card p {
+    font-size: 1.1rem;
+}
+
+/* EXPERIENCE SECTION */
+
+.experience-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    background-color: var(--secondary-color);
+    padding: 3rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.experience-content {
+    flex: 1;
+    min-width: 300px;
+}
+
+.experience-content h1 {
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    margin-bottom: 2rem;
+}
+
+.service-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.service-item {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 1.5rem;
+}
+
+.service-item h2 {
+    font-size: 1.5rem;
+    color: var(--dark-color);
+}
+
+.service-item p {
+    font-size: 1rem;
+}
+
+.experience-images {
+    flex: 1;
+    min-width: 300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50%;
+}
+
+.box__1, .box__2 {
+    position: absolute;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.box__1 {
+    width: 80%;
+    height: 80%;
+    top: 0;
+    left: 0;
+    background-image: url(https://img.freepik.com/fotos-premium/tratamiento-radiografia-odontologia-dientes-examen-profesional-rayos-x_116317-22666.jpg?w=360);
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+
+.box__2 {
+    width: 60%;
+    height: 60%;
+    bottom: 0;
+    right: 0;
+    background-image: url(https://i.pinimg.com/564x/ec/ef/77/ecef772551120e9cb7489e82a31fae3b.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: 2;
+}
+
+/* PARALLAX SECTION */
+
+.parallax-section {
+    height: 400px;
+    background-image: url("https://i.pinimg.com/564x/79/4d/69/794d693f13923fdc0a86ea7c802cb149.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.parallax-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* FOOTER */
+
+footer {
+    background-color: var(--dark-color);
+    color: white;
+    padding: 2rem 1rem;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .footer-left, .footer-center, .footer-right {
     flex: 1;
+    min-width: 250px;
+    margin: 1rem 0;
 }
 
 .footer-center ul {
@@ -421,33 +376,91 @@ footer {
     padding: 0;
     margin: 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-}
-
-.footer-center li {
-    margin: 0 15px;
+    gap: 1rem;
 }
 
 .footer-center a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.footer-center a:hover {
-    text-decoration: underline;
-}
-
-.footer-right {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.social-media-icon {
-    margin: 0 10px;
+    color: white;
 }
 
 .social-media-icon img {
-    width: 24px;
-    height: 24px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+/* RESPONSIVE DESIGN - MEDIA QUERIES */
+
+@media (max-width: 1024px) {
+    .nav__item__name {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-content {
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+    }
+
+    .nav__logo-link {
+        margin-bottom: 1rem;
+    }
+
+    .nav__ul {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+    }
+
+    .nav__ul.nav__menu--open {
+        max-height: 500px;
+    }
+
+    .nav__item {
+        margin: 0.5rem 0;
+    }
+
+    .nav__link {
+        width: 100%;
+        padding: 1rem 0;
+    }
+
+    .nav__toggle {
+        display: flex;
+        position: absolute;
+        right: 2rem;
+        margin: auto;
+        height: max-content;
+        top: 15px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
+    
+}
+
+@media (max-width: 500px) {
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .header__subtitle {
+        font-size: 1rem;
+    }
+
+    .nav {
+        padding: 1rem;
+    }
+
+    .nav__toggle {
+        right: 1rem;
+    }
 }

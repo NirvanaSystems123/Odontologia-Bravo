@@ -1,5 +1,5 @@
 <?php
-$conexion= mysqli_connect("sql112.infinityfree.com","if0_39671337","200520061212ab","consultorio");
+$conexion= mysqli_connect("localhost","root","","consultorio");
 
 /*
 if ($conexion) {

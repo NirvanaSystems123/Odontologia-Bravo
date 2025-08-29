@@ -3,7 +3,7 @@ include "header.php";
 include "navbar.php";
 ?>
 
-<div class="container" style="margin-top:30px">
+<div class="container custom-container">
   <div class="row">
     <div class="col-sm-4 text-center">
       <h2>Reserva tu cita</h2>
